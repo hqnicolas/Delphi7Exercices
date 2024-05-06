@@ -1,4 +1,5 @@
 # Exercício de BDE com Delphi 7
+
 - Definindo o Local de Armazenamento da Tabela:
 Primeiro, você precisa estabelecer o local onde deseja armazenar as informações da tabela. Isso envolve a definição de um diretório ou caminho onde os dados serão salvos. Para fazer isso, você geralmente utiliza o componente TDatabase para especificar o caminho do banco de dados.
 
