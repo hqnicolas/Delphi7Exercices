@@ -1,5 +1,6 @@
+![image](https://github.com/hqnicolas/Delphi7Exercices/assets/41456803/36c5d02c-1521-421a-b7c8-1d9d60d35ccf)
+
 # O jogo da forca.
-![image](https://github.com/hqnicolas/delphi7Exercices/assets/41456803/7c3cb18b-3a51-4467-a1a8-b27c6681dff8)
 
 Este é um programa escrito em Delphi, Ele contém vários componentes gráficos como botões e rótulos, alguns visíveis/invisíveis e outros com funções de eventos associados, tais como click events.
 - Ele cria uma interface gráfica com botões para letras do alfabeto.
