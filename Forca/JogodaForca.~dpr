@@ -1,0 +1,13 @@
+program JogodaForca;
+
+uses
+  Forms,
+  Forca in 'Forca.pas' {GmeForca};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TGmeForca, GmeForca);
+  Application.Run;
+end.

@@ -1,0 +1,128 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, Mask, StdCtrls, Buttons, jpeg;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    Edit1: TEdit;
+    CheckBox1: TCheckBox;
+    Label1: TLabel;
+    btnA: TSpeedButton;
+    BtnC: TSpeedButton;
+    BtnS: TSpeedButton;
+    btnE: TSpeedButton;
+    Label2: TLabel;
+    Image1: TImage;
+    procedure Button2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Edit1KeyPress(Sender: TObject; var Key: Char);
+    procedure CheckBox1Click(Sender: TObject);
+    procedure btnAClick(Sender: TObject);
+    procedure BtnCClick(Sender: TObject);
+    procedure BtnSClick(Sender: TObject);
+    procedure btnEClick(Sender: TObject);
+  private
+     procedure verifica(letra:char);
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  palavra,espaco: string;
+  tam:byte;
+
+implementation
+
+{$R *.dfm}
+
+procedure tform1.verifica(letra:char);
+var
+ i :byte;
+ erro: boolean;
+begin
+   erro:=true;
+   for i := 1 to tam do
+   begin
+      if palavra[i] = letra then
+      begin
+         espaco[i+i-1] := letra;
+         erro:=false;
+      end;
+   end;
+   if erro then
+   begin
+        image1.Visible:=true;
+         label2.Caption:=label2.Caption+letra;
+   end;
+
+   label1.Caption:=espaco;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+ i : byte;
+begin
+   espaco:='';
+   palavra:=trim(edit1.Text);
+   tam:=length(palavra);
+   for i:=1 to tam do
+      if palavra[i]<> ' ' then
+         espaco:= espaco+'_ '
+      else
+         espaco:= espaco+'   ';
+   label1.Caption:=espaco;
+   Panel2.Visible:=false;
+   panel1.Visible:=true;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  Panel1.Visible:=false;
+   panel2.Visible:=true;
+end;
+
+procedure TForm1.Edit1KeyPress(Sender: TObject; var Key: Char);
+begin
+   key:=upcase(key);
+end;
+
+procedure TForm1.CheckBox1Click(Sender: TObject);
+begin
+    if CheckBox1.Checked then
+       edit1.PasswordChar:='$'
+    else
+       edit1.PasswordChar:=#0;
+end;
+
+procedure TForm1.btnAClick(Sender: TObject);
+begin
+ verifica('A');
+ btna.Enabled:=false;
+end;
+
+procedure TForm1.BtnCClick(Sender: TObject);
+begin
+  verifica('C');
+end;
+
+procedure TForm1.BtnSClick(Sender: TObject);
+begin
+   verifica('S');
+end;
+
+procedure TForm1.btnEClick(Sender: TObject);
+begin
+   verifica('E');
+end;
+
+end.
