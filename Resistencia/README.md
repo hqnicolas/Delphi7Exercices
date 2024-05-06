@@ -1,7 +1,8 @@
 # Programa em Delphi para Traduzir Cores de Resistores
 - [Descrição técnica](https://github.com/hqnicolas/delphi7Exercices/blob/main/Resistencia/cores/tab_resist.pdf)
 ___________________________________________________________________________________________________
-  ![image](https://github.com/hqnicolas/delphi7Exercices/assets/41456803/983c1e0e-2cf5-40c8-9c34-48506e01d3e7)
+![image](https://github.com/hqnicolas/Delphi7Exercices/assets/41456803/ca5b5637-326c-4e4e-a5ba-78e65f0faea1)
+
 - Cálculos e representação gráfica de resistores eletrônicos.
 - Esse programa permite que o usuário insira um valor de resistência, escolha uma tolerância e veja a representação visual desse resistor em cores no formulário. Ele também tem funcionalidade para limpar os campos e reiniciar as contas.
 A interface gráfica do aplicativo inclui botões, comboboxes e campos de edição.
