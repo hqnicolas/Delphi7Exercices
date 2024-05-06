@@ -1,5 +1,5 @@
 # Formas e Formatos 
-![image](https://github.com/hqnicolas/delphi7Exercices/assets/41456803/7450d75a-5e54-4de9-8c33-82f1f6cf7d2d)
+![image](https://github.com/hqnicolas/Delphi7Exercices/assets/41456803/641b9572-fe46-4f97-a347-f9a00085081c)
 
 - Este é um programa em Delphi que cria um formulário com vários elementos gráficos, incluindo painéis, retângulos, campos de texto para entrada de valores numéricos e botões.
 - Além disso, há também grupos de rádio para escolha da cor do preenchimento do shape e um combo box para a escolha da forma geométrica do shape.
